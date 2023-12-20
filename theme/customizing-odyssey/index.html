@@ -1,47 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<!-- Global Metadata --><meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<link rel="icon" type="image/png" href="/favicon.png">
-<!-- Primary Meta Tags -->
-<title>Customizing Odyssey Theme</title>
-<meta name="title" content="Customizing Odyssey Theme">
-<meta name="description" content="Learn how to customize Odyssey Theme's theme styles.">
-<link rel="canonical" href="https://kieranwood.ca/philosophy/theme/customizing-odyssey/">
-<!-- Generator -->
-<meta name="generator" content="Astro v1.6.2">
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://kieranwood.ca/philosophy/theme/customizing-odyssey/">
-<meta property="og:title" content="Customizing Odyssey Theme">
-<meta property="og:description" content="Learn how to customize Odyssey Theme's theme styles.">
-<meta property="og:image" content="https://kieranwood.ca/social.png">
-
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://kieranwood.ca/philosophy/theme/customizing-odyssey/">
-<meta property="twitter:title" content="Customizing Odyssey Theme">
-<meta property="twitter:description" content="Learn how to customize Odyssey Theme's theme styles.">
-<meta property="twitter:image" content="https://kieranwood.ca/social.png">
-
-<!-- For Demonstration of the themes -->
-<!-- This is a simple script to check if there is a theme value in local storage. That way the theme stays with you between pages --><script>
+<!DOCTYPE html><html lang="en"> <head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/png" href="/philosophy/favicon.png"><!-- Primary Meta Tags --><title>Customizing Odyssey Theme</title><meta name="title" content="Customizing Odyssey Theme"><meta name="description" content="Learn how to customize Odyssey Theme's theme styles."><link rel="canonical" href="https://kieranwood.ca/philosophy/theme/customizing-odyssey/"><!-- Generator --><meta name="generator" content="Astro v3.6.4"><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://kieranwood.ca/philosophy/theme/customizing-odyssey/"><meta property="og:title" content="Customizing Odyssey Theme"><meta property="og:description" content="Learn how to customize Odyssey Theme's theme styles."><meta property="og:image" content="https://kieranwood.ca/social.png"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://kieranwood.ca/philosophy/theme/customizing-odyssey/"><meta property="twitter:title" content="Customizing Odyssey Theme"><meta property="twitter:description" content="Learn how to customize Odyssey Theme's theme styles."><meta property="twitter:image" content="https://kieranwood.ca/social.png"><!-- For Demonstration of the themes --><!-- This is a simple script to check if there is a theme value in local storage. That way the theme stays with you between pages --><script>
 	const doc = document.firstElementChild;
 	const localStorageTheme = localStorage.getItem('theme');
 
 	if (localStorageTheme !== null) {
 		doc.setAttribute('data-theme', localStorageTheme);
 	}
-</script>
-
-
-<!-- Google Analytics -->
-
-	<link rel="stylesheet" href="/philosophy/assets/contact.271e14f3.css" />
-<link rel="stylesheet" href="/philosophy/assets/consent-to-violence.302b5adc.css" />
-<link rel="stylesheet" href="/philosophy/assets/consent-to-violence.06ad24e2.css" />
-<link rel="stylesheet" href="/philosophy/assets/consent-to-violence.6a83f68f.css" /><script type="module">
+</script><!-- Google Analytics --><style>#article[data-astro-cid-gvpn4u4b]{padding-bottom:3rem}.post-header__container[data-astro-cid-gvpn4u4b]{max-width:var(--theme-blog-post-header-width);margin:1rem auto;padding:var(--container-padding)}.post-tags__list[data-astro-cid-gvpn4u4b]{margin:1rem auto;padding:0;list-style:none}.post-tags__tag[data-astro-cid-gvpn4u4b]{text-transform:uppercase}.post-tags__tag[data-astro-cid-gvpn4u4b] a[data-astro-cid-gvpn4u4b]{font-size:var(--font-size-sm);text-decoration:none}.post-layout__img[data-astro-cid-gvpn4u4b]{margin:0 auto 1rem;border-radius:var(--theme-shape-radius)}.post-layout__date[data-astro-cid-gvpn4u4b]{margin-bottom:1rem;opacity:.84}
+</style>
+<link rel="stylesheet" href="/philosophy/_astro/consent-to-violence.87359132.css" />
+<link rel="stylesheet" href="/philosophy/_astro/contact.e15f9ab9.css" />
+<style>.theme-change[data-astro-cid-qo5xhe7c]{text-align:center}
+</style><script type="module">
 </script>
 <script>/** @license Copyright 2020 Google LLC (BSD-3-Clause) */
 /** Bundled JS generated from "@astrojs/lit/client-shim.js" */
@@ -130,13 +99,7 @@ var x = new DOMParser()
 	})
 	.querySelector('p');
 (!x || !x.shadowRoot) && g();
-</script></head>
-	<body>
-		<a href="#content" class="astro-BDIWEA2F">Skip to main content</a>
-
-
-    
-		<script type="module">
+</script></head> <body> <a href="#content" data-astro-cid-tfquunid>Skip to main content</a>   <script type="module">
   const bodyElement = document.querySelector('body');
   const menuButton = document.querySelector('#menuButton')
   const navHeader = document.querySelector('#odysseyNavHeader');
@@ -170,60 +133,54 @@ var x = new DOMParser()
     
     navHeader.toggleAttribute('mobile-menu-open');
   }
-</script>  
-
-<header id="odysseyNavHeader" class="header--right astro-7I2N7XJP">
-  <div class="header-logo-menu__container astro-7I2N7XJP">
-  <button id="menuButton" title="Open Main Menu" class="astro-7I2N7XJP">
-    <span id="menuButtonIconHam" class="astro-7I2N7XJP">
-      <svg viewBox="0 0 24 24" width="24px" height="24px" class="astro-7I2N7XJP" astro-icon="ic:baseline-menu"><path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
-    </span>
-    <span id="menuButtonIconClose" hidden class="astro-7I2N7XJP">
-      <svg viewBox="0 0 24 24" width="24px" height="24px" class="astro-7I2N7XJP" astro-icon="ic:baseline-close"><path fill="currentColor" d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-    </span>
-  </button>
-  <a class="header-logo__link astro-7I2N7XJP" href="/">
-    <span class="astro-HUOQXU2Q">
-			<p class="odyssey-logo astro-6BKONSAL">Odyssey</p>
-
-
-		</span>
-  </a>
-  </div>
-  <div class="header-nav__container astro-7I2N7XJP">
-    
-      <nav class="astro-7I2N7XJP">
-        <ul class="astro-7I2N7XJP">
-          <li class="astro-7I2N7XJP"><a href="/" class="astro-7I2N7XJP">Home</a></li><li class="astro-7I2N7XJP"><a href="/blog" class="astro-7I2N7XJP">Blog</a></li><li class="astro-7I2N7XJP"><a href="/company/about" class="astro-7I2N7XJP">About</a></li><li class="astro-7I2N7XJP"><a href="/company/contact" class="astro-7I2N7XJP">Contact</a></li>
-        </ul>
-      </nav>
-    
-  </div>
-  <div class="header-action-item__container astro-7I2N7XJP">
-    <a class="btn undefined undefined undefined astro-5VNEE24L" href="/theme/get-started" target="" rel="">Get Started</a>
-
-
-  </div>
-</header>
-		<main id="content">
-			<style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).load=a=>{(async()=>await(await a())())()},window.dispatchEvent(new Event("astro:load"));var l;{const c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;const[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;const s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(const r of n){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(const r of s){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}const a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){const s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{const n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(const d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}</script><div id="page" class="astro-HUOQXU2Q">
-		<div class="post-header__container astro-PRJFDYIV"> 
-    <ul class="post-tags__list astro-PRJFDYIV">
-      
-    </ul>
-    <h1 class="astro-PRJFDYIV">Customizing Odyssey Theme</h1>
-    <p class="post-layout__date astro-PRJFDYIV">
-      <time class="astro-PRJFDYIV"><em class="astro-PRJFDYIV"></em></time>
-    </p>
-    
-  </div><div class="content__container content__container--narrow astro-4LGS25LW">
-  <article id="article" class="astro-PRJFDYIV">
-        <p>This is one of the core features of Odyssey Theme and we’ve made it super easy to make the overall look and feel of the site your own with just a few top-level CSS custom properties. These custom properties and demo themes will be found in the <code>theme.css</code> file under <code>src/styles/</code>.</p>
+</script> <header id="odysseyNavHeader" class="header--right" data-astro-cid-ihuvrz6a> <div class="header-logo-menu__container" data-astro-cid-ihuvrz6a> <button id="menuButton" title="Open Main Menu" data-astro-cid-ihuvrz6a> <span id="menuButtonIconHam" data-astro-cid-ihuvrz6a> <svg viewBox="0 0 24 24" width="24px" height="24px" data-astro-cid-ihuvrz6a astro-icon="ic:baseline-menu"><path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg> </span> <span id="menuButtonIconClose" hidden data-astro-cid-ihuvrz6a> <svg viewBox="0 0 24 24" width="24px" height="24px" data-astro-cid-ihuvrz6a astro-icon="ic:baseline-close"><path fill="currentColor" d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg> </span> </button> <a class="header-logo__link" href="/" data-astro-cid-ihuvrz6a> <span data-astro-cid-qo5xhe7c> <p class="odyssey-logo" data-astro-cid-tvrurpns>Odyssey</p>  </span> </a> </div> <div class="header-nav__container" data-astro-cid-ihuvrz6a>  <nav data-astro-cid-ihuvrz6a> <ul data-astro-cid-ihuvrz6a> <li data-astro-cid-ihuvrz6a><a href="/philosophy" data-astro-cid-ihuvrz6a>Home</a></li><li data-astro-cid-ihuvrz6a><a href="/philosophy/blog" data-astro-cid-ihuvrz6a>Blog</a></li><li data-astro-cid-ihuvrz6a><a href="/philosophy/company/about" data-astro-cid-ihuvrz6a>About</a></li><li data-astro-cid-ihuvrz6a><a href="/philosophy/company/contact" data-astro-cid-ihuvrz6a>Contact</a></li> </ul> </nav>  </div> <div class="header-action-item__container" data-astro-cid-ihuvrz6a> <a class="btn undefined undefined undefined" href="/philosophy/theme/get-started" target="" rel="" data-astro-cid-vvd7jmuu> Get Started </a>  </div> </header>  <main id="content">   <div id="page" data-astro-cid-qo5xhe7c>  <div class="post-header__container" data-astro-cid-gvpn4u4b> <ul class="post-tags__list" data-astro-cid-gvpn4u4b>  </ul> <h1 data-astro-cid-gvpn4u4b>Customizing Odyssey Theme</h1> <p class="post-layout__date" data-astro-cid-gvpn4u4b> <time data-astro-cid-gvpn4u4b><em data-astro-cid-gvpn4u4b></em></time> </p>  </div> <div class="content__container content__container--narrow" data-astro-cid-63dlo7zr>  <article id="article" data-astro-cid-gvpn4u4b> <p>This is one of the core features of Odyssey Theme and we’ve made it super easy to make the overall look and feel of the site your own with just a few top-level CSS custom properties. These custom properties and demo themes will be found in the <code>theme.css</code> file under <code>src/styles/</code>.</p>
 <p>First, If you are not planning on using the theme switcher found on the demo’s home page we would recommend you go to the <code>settings.js</code> file under <code>src/config/</code> and set <code>enableThemeSwitcher</code> to false. This will remove the theme switcher components and javascript from your website.</p>
 <p>It should look something like this.</p>
-<pre class="shiki github-dark" style="background-color:#0d1117;color:#c9d1d9"><div class="language-id">js</div><div class="code-container"><code><div class="line"><span style="color:#FF7B72">export</span><span style="color:#FFA657"> </span><span style="color:#FF7B72">default</span><span style="color:#FFA657"> {</span></div><div class="line"><span style="color:#FFA657">  </span><span style="color:#C9D1D9">title: </span><span style="color:#A5D6FF">`Odyssey Astro Theme | A Marketing Website Theme for Startups and Businesses`</span><span style="color:#FFA657">,</span></div><div class="line"><span style="color:#FFA657">  </span><span style="color:#C9D1D9">description: </span><span style="color:#A5D6FF">`A simple, clean, and modern theme a startup or businesses&#39; marketing website.`</span><span style="color:#FFA657">,</span></div><div class="line"><span style="color:#FFA657">  </span><span style="color:#FF7B72">...</span></div><div class="line"><span style="color:#C9D1D9">  enableThemeSwitcher: </span><span style="color:#79C0FF">false</span><span style="color:#FFA657">,</span></div><div class="line"><span style="color:#FFA657">}</span><span style="color:#C9D1D9">;</span></div></code></div></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0"><code><span class="line"><span style="color:#F97583">export</span><span style="color:#F97583"> default</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#E1E4E8">  title: </span><span style="color:#9ECBFF">`Odyssey Astro Theme | A Marketing Website Theme for Startups and Businesses`</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  description: </span><span style="color:#9ECBFF">`A simple, clean, and modern theme a startup or businesses&#39; marketing website.`</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">  ...</span></span>
+<span class="line"><span style="color:#E1E4E8">  enableThemeSwitcher: </span><span style="color:#79B8FF">false</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">};</span></span></code></pre>
 <p>Second, if you are only going to have one theme on your site (most common) then you can delete all of the <code>[data-theme]</code> rules from the file and only keep the <code>:root</code> theme that looks something like this.</p>
-<pre class="shiki github-dark" style="background-color:#0d1117;color:#c9d1d9"><div class="language-id">css</div><div class="code-container"><code><div class="line"><span style="color:#79C0FF">:root</span><span style="color:#C9D1D9"> {</span></div><div class="line"><span style="color:#C9D1D9">	</span><span style="color:#8B949E">/* Theme Colors */</span></div><div class="line"><span style="color:#C9D1D9">	</span><span style="color:#FFA657">--theme-primary</span><span style="color:#C9D1D9">: </span><span style="color:#79C0FF">hsl</span><span style="color:#C9D1D9">(</span><span style="color:#79C0FF">0</span><span style="color:#C9D1D9">, </span><span style="color:#79C0FF">0</span><span style="color:#FF7B72">%</span><span style="color:#C9D1D9">, </span><span style="color:#79C0FF">0</span><span style="color:#FF7B72">%</span><span style="color:#C9D1D9">);</span></div><div class="line"><span style="color:#C9D1D9">	</span><span style="color:#FFA657">--theme-primary-hover</span><span style="color:#C9D1D9">: </span><span style="color:#79C0FF">hsl</span><span style="color:#C9D1D9">(</span><span style="color:#79C0FF">0</span><span style="color:#C9D1D9">, </span><span style="color:#79C0FF">0</span><span style="color:#FF7B72">%</span><span style="color:#C9D1D9">, </span><span style="color:#79C0FF">20</span><span style="color:#FF7B72">%</span><span style="color:#C9D1D9">);</span></div><div class="line"><span style="color:#C9D1D9">	</span><span style="color:#FFA657">--theme-on-primary</span><span style="color:#C9D1D9">: </span><span style="color:#79C0FF">#fff</span><span style="color:#C9D1D9">;</span></div><div class="line"></div><div class="line"><span style="color:#C9D1D9">	</span><span style="color:#FFA657">--theme-bg</span><span style="color:#C9D1D9">: </span><span style="color:#79C0FF">#fff</span><span style="color:#C9D1D9">;</span></div><div class="line"><span style="color:#C9D1D9">	</span><span style="color:#FFA657">--theme-on-bg</span><span style="color:#C9D1D9">: </span><span style="color:#79C0FF">#000</span><span style="color:#C9D1D9">;</span></div><div class="line"></div><div class="line"><span style="color:#C9D1D9">	</span><span style="color:#FFA657">--theme-surface-1</span><span style="color:#C9D1D9">: </span><span style="color:#79C0FF">#f2f2f2</span><span style="color:#C9D1D9">;</span></div><div class="line"><span style="color:#C9D1D9">	</span><span style="color:#FFA657">--theme-on-surface-1</span><span style="color:#C9D1D9">: </span><span style="color:#79C0FF">#000</span><span style="color:#C9D1D9">;</span></div><div class="line"></div><div class="line"><span style="color:#C9D1D9">	</span><span style="color:#FFA657">--theme-surface-2</span><span style="color:#C9D1D9">: </span><span style="color:#79C0FF">#cce6d0</span><span style="color:#C9D1D9">;</span></div><div class="line"><span style="color:#C9D1D9">	</span><span style="color:#FFA657">--theme-on-surface-2</span><span style="color:#C9D1D9">: </span><span style="color:#79C0FF">#000</span><span style="color:#C9D1D9">;</span></div><div class="line"></div><div class="line"><span style="color:#C9D1D9">	</span><span style="color:#8B949E">/* Theme Shapes */</span></div><div class="line"><span style="color:#C9D1D9">	</span><span style="color:#8B949E">/* Set this to 0 if you want all of the rounded cards, images, etc to be straight edges */</span></div><div class="line"><span style="color:#C9D1D9">	</span><span style="color:#FFA657">--theme-shape-radius</span><span style="color:#C9D1D9">: clamp(</span><span style="color:#79C0FF">1</span><span style="color:#FF7B72">rem</span><span style="color:#C9D1D9">, </span><span style="color:#79C0FF">2</span><span style="color:#FF7B72">rem</span><span style="color:#C9D1D9">, </span><span style="color:#79C0FF">3</span><span style="color:#FF7B72">rem</span><span style="color:#C9D1D9">);</span></div><div class="line"><span style="color:#C9D1D9">	</span><span style="color:#FFA657">--theme-button-border-radius</span><span style="color:#C9D1D9">: </span><span style="color:#79C0FF">3</span><span style="color:#FF7B72">rem</span><span style="color:#C9D1D9">;</span></div><div class="line"></div><div class="line"><span style="color:#C9D1D9">	</span><span style="color:#8B949E">/* Theme Transition */</span></div><div class="line"><span style="color:#C9D1D9">	</span><span style="color:#FFA657">--theme-transition</span><span style="color:#C9D1D9">: </span><span style="color:#79C0FF">0.2</span><span style="color:#FF7B72">s</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">ease-in-out</span><span style="color:#C9D1D9">;</span></div><div class="line"></div><div class="line"><span style="color:#C9D1D9">	</span><span style="color:#8B949E">/* Theme Layout */</span></div><div class="line"><span style="color:#C9D1D9">	</span><span style="color:#FFA657">--section-margin</span><span style="color:#C9D1D9">: </span><span style="color:#79C0FF">3</span><span style="color:#FF7B72">rem</span><span style="color:#C9D1D9">;</span></div><div class="line"><span style="color:#C9D1D9">	</span><span style="color:#FFA657">--theme-grid-gap</span><span style="color:#C9D1D9">: </span><span style="color:#79C0FF">1</span><span style="color:#FF7B72">rem</span><span style="color:#C9D1D9">;</span></div><div class="line"><span style="color:#C9D1D9">	</span><span style="color:#FFA657">--container-max-width</span><span style="color:#C9D1D9">: </span><span style="color:#79C0FF">1440</span><span style="color:#FF7B72">px</span><span style="color:#C9D1D9">;</span></div><div class="line"><span style="color:#C9D1D9">	</span><span style="color:#FFA657">--container-max-width-narrow</span><span style="color:#C9D1D9">: </span><span style="color:#79C0FF">960</span><span style="color:#FF7B72">px</span><span style="color:#C9D1D9">;</span></div><div class="line"><span style="color:#C9D1D9">	</span><span style="color:#FFA657">--container-padding</span><span style="color:#C9D1D9">: </span><span style="color:#79C0FF">0</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">1</span><span style="color:#FF7B72">rem</span><span style="color:#C9D1D9">;</span></div><div class="line"></div><div class="line"><span style="color:#C9D1D9">	</span><span style="color:#FFA657">--theme-blog-post-header-width</span><span style="color:#C9D1D9">: </span><span style="color:#79C0FF">1200</span><span style="color:#FF7B72">px</span><span style="color:#C9D1D9">;</span></div><div class="line"></div><div class="line"><span style="color:#C9D1D9">	</span><span style="color:#8B949E">/* Theme Fonts */</span></div><div class="line"><span style="color:#C9D1D9">	</span><span style="color:#FFA657">--theme-font-family-serif</span><span style="color:#C9D1D9">: </span><span style="color:#A5D6FF">&#39;Roboto Serif&#39;</span><span style="color:#C9D1D9">, </span><span style="color:#79C0FF">Georgia</span><span style="color:#C9D1D9">, Cambria, </span><span style="color:#A5D6FF">&#39;Times New Roman&#39;</span><span style="color:#C9D1D9">,</span></div><div class="line"><span style="color:#C9D1D9">		</span><span style="color:#79C0FF">Times</span><span style="color:#C9D1D9">, </span><span style="color:#79C0FF">serif</span><span style="color:#C9D1D9">;</span></div><div class="line"><span style="color:#C9D1D9">	</span><span style="color:#FFA657">--theme-font-family-sans</span><span style="color:#C9D1D9">: </span><span style="color:#A5D6FF">&#39;Lato&#39;</span><span style="color:#C9D1D9">, </span><span style="color:#79C0FF">-apple-system</span><span style="color:#C9D1D9">, BlinkMacSystemFont,</span></div><div class="line"><span style="color:#C9D1D9">		</span><span style="color:#79C0FF">sans-serif</span><span style="color:#C9D1D9">;</span></div><div class="line"><span style="color:#C9D1D9">}</span></div></code></div></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0"><code><span class="line"><span style="color:#B392F0">:root</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#6A737D">	/* Theme Colors */</span></span>
+<span class="line"><span style="color:#FFAB70">	--theme-primary</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">hsl</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">0</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">0</span><span style="color:#F97583">%</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">0</span><span style="color:#F97583">%</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#FFAB70">	--theme-primary-hover</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">hsl</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">0</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">0</span><span style="color:#F97583">%</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">20</span><span style="color:#F97583">%</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#FFAB70">	--theme-on-primary</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">#fff</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFAB70">	--theme-bg</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">#fff</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#FFAB70">	--theme-on-bg</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">#000</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFAB70">	--theme-surface-1</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">#f2f2f2</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#FFAB70">	--theme-on-surface-1</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">#000</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFAB70">	--theme-surface-2</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">#cce6d0</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#FFAB70">	--theme-on-surface-2</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">#000</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">	/* Theme Shapes */</span></span>
+<span class="line"><span style="color:#6A737D">	/* Set this to 0 if you want all of the rounded cards, images, etc to be straight edges */</span></span>
+<span class="line"><span style="color:#FFAB70">	--theme-shape-radius</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">clamp</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">1</span><span style="color:#F97583">rem</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">2</span><span style="color:#F97583">rem</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">3</span><span style="color:#F97583">rem</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#FFAB70">	--theme-button-border-radius</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">3</span><span style="color:#F97583">rem</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">	/* Theme Transition */</span></span>
+<span class="line"><span style="color:#FFAB70">	--theme-transition</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">0.2</span><span style="color:#F97583">s</span><span style="color:#79B8FF"> ease-in-out</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">	/* Theme Layout */</span></span>
+<span class="line"><span style="color:#FFAB70">	--section-margin</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">3</span><span style="color:#F97583">rem</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#FFAB70">	--theme-grid-gap</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">1</span><span style="color:#F97583">rem</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#FFAB70">	--container-max-width</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">1440</span><span style="color:#F97583">px</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#FFAB70">	--container-max-width-narrow</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">960</span><span style="color:#F97583">px</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#FFAB70">	--container-padding</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">0</span><span style="color:#79B8FF"> 1</span><span style="color:#F97583">rem</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFAB70">	--theme-blog-post-header-width</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">1200</span><span style="color:#F97583">px</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">	/* Theme Fonts */</span></span>
+<span class="line"><span style="color:#FFAB70">	--theme-font-family-serif</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">&#39;Roboto Serif&#39;</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">Georgia</span><span style="color:#E1E4E8">, Cambria, </span><span style="color:#9ECBFF">&#39;Times New Roman&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">		Times</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">serif</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#FFAB70">	--theme-font-family-sans</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">&#39;Lato&#39;</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">-apple-system</span><span style="color:#E1E4E8">, BlinkMacSystemFont,</span></span>
+<span class="line"><span style="color:#79B8FF">		sans-serif</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
 <p>Look below for a breakdown of each property.</p>
 <h2 id="colors">Colors</h2>
 <p>Here is a quick breakdown of the color properties:</p>
@@ -261,10 +218,7 @@ var x = new DOMParser()
 <li>
 <p>Update your font stack with the <code>--theme-font-family-serif</code> and <code>--theme-font-family-sans</code> custom properties.</p>
 </li>
-</ol>
-    </article>
-</div>
-	</div><h3 class="theme-change astro-HUOQXU2Q">Change theme</h3><astro-island uid="Z2aNRip" component-url="/philosophy/theme-switcher.8975c9db.js" ssr="" client="load" before-hydration-url="/philosophy/chunks/astro_scripts/before-hydration.js.57fd46aa.js" opts="{&quot;name&quot;:&quot;ThemeSwitcher&quot;,&quot;value&quot;:true}" await-children=""><theme-switcher class="astro-HUOQXU2Q"><template shadowroot="open"><style>
+</ol> </article>  </div>   </div>  <h3 class="theme-change" data-astro-cid-qo5xhe7c>Change theme</h3> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();;(()=>{var b=Object.defineProperty;var f=(c,o,i)=>o in c?b(c,o,{enumerable:!0,configurable:!0,writable:!0,value:i}):c[o]=i;var l=(c,o,i)=>(f(c,typeof o!="symbol"?o+"":o,i),i);var p;{let c={0:t=>m(t),1:t=>i(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(i(t)),5:t=>new Set(i(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t)},o=t=>{let[e,r]=t;return e in c?c[e](r):void 0},i=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([e,r])=>[e,o(r)]));customElements.get("astro-island")||customElements.define("astro-island",(p=class extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var d;if(!this.hydrator||!this.isConnected)return;let e=(d=this.parentElement)==null?void 0:d.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),a={},h=this.querySelectorAll("template[data-astro-template]");for(let n of h){let s=n.closest(this.tagName);s!=null&&s.isSameNode(this)&&(a[n.getAttribute("data-astro-template")||"default"]=n.innerHTML,n.remove())}for(let n of r){let s=n.closest(this.tagName);s!=null&&s.isSameNode(this)&&(a[n.getAttribute("name")||"default"]=n.innerHTML)}let u;try{u=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(n){let s=this.getAttribute("component-url")||"<unknown>",y=this.getAttribute("component-export");throw y&&(s+=` (export ${y})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),n),n}await this.hydrator(this)(this.Component,u,a,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var a;((a=this.lastChild)==null?void 0:a.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}Astro[r](async()=>{let a=this.getAttribute("renderer-url"),[h,{default:u}]=await Promise.all([import(this.getAttribute("component-url")),a?import(a):()=>()=>{}]),d=this.getAttribute("component-export")||"default";if(!d.includes("."))this.Component=h[d];else{this.Component=h;for(let n of d.split("."))this.Component=this.Component[n]}return this.hydrator=u,this.hydrate},e,this)}attributeChangedCallback(){this.hydrate()}},l(p,"observedAttributes",["props"]),p))}})();</script><astro-island uid="269Bf9" component-url="/philosophy/_astro/theme-switcher.2e9843b9.js" ssr="" client="load" before-hydration-url="/philosophy/_astro/astro_scripts/before-hydration.js.864334e7.js" opts="{&quot;name&quot;:&quot;ThemeSwitcher&quot;,&quot;value&quot;:true}" await-children=""><theme-switcher data-astro-cid-qo5xhe7c="true"><template shadowroot="open"><style>
 			:host {
 				display: block;
 			}
@@ -490,76 +444,4 @@ xmlns="http://www.w3.org/2000/svg"
         </div>
       <!--/lit-part--><!--/lit-part--><?><!--/lit-part-->
 			</div>
-		<!--/lit-part--></template></theme-switcher></astro-island>
-		</main>
-		<footer style="--footer-bg:var(--theme-surface-1); --footer-color:var(--theme-on-surface-1)" class="astro-A52JHQYS">
-  <div class="content__container  astro-4LGS25LW">
-  <div class="footer-grid__container astro-A52JHQYS">
-      <div class="footer-brand__container astro-A52JHQYS">
-        <div class="astro-A52JHQYS">
-          <p class="odyssey-logo astro-6BKONSAL">Odyssey</p>
-
-
-        </div>
-        <ul class="footer-socials__list astro-A52JHQYS">
-          <li class="footer-socials__item astro-A52JHQYS">
-                <a href="https://twitter.com/littlesticksdev" target="_blank" rel="noopener noreferrer" class="footer-socials__link astro-A52JHQYS" title="Open Twitter profile">
-                  <svg viewBox="0 0 24 24" width="24px" height="24px" class="astro-A52JHQYS" astro-icon="mdi:twitter"><path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg>
-                </a>
-              </li><li class="footer-socials__item astro-A52JHQYS">
-                <a href="https://youtube.com/c/LittleSticks" target="_blank" rel="noopener noreferrer" class="footer-socials__link astro-A52JHQYS" title="Open Youtube profile">
-                  <svg viewBox="0 0 24 24" width="24px" height="24px" class="astro-A52JHQYS" astro-icon="mdi:youtube"><path fill="currentColor" d="m10 15 5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"/></svg>
-                </a>
-              </li><li class="footer-socials__item astro-A52JHQYS">
-                <a href="https://github.com/littlesticks" target="_blank" rel="noopener noreferrer" class="footer-socials__link astro-A52JHQYS" title="Open Github profile">
-                  <svg viewBox="0 0 24 24" width="24px" height="24px" class="astro-A52JHQYS" astro-icon="mdi:github"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
-                </a>
-              </li><li class="footer-socials__item astro-A52JHQYS">
-                <a href="https://littlesticks.dev/discord" target="_blank" rel="noopener noreferrer" class="footer-socials__link astro-A52JHQYS" title="Open Discord profile">
-                  <svg viewBox="0 0 24 24" width="24px" height="24px" class="astro-A52JHQYS" astro-icon="ic:baseline-discord"><path fill="currentColor" d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.09.09 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.09 16.09 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09-.01-.02-.04-.03-.07-.03-1.5.26-2.93.71-4.27 1.33-.01 0-.02.01-.03.02-2.72 4.07-3.47 8.03-3.1 11.95 0 .02.01.04.03.05 1.8 1.32 3.53 2.12 5.24 2.65.03.01.06 0 .07-.02.4-.55.76-1.13 1.07-1.74.02-.04 0-.08-.04-.09-.57-.22-1.11-.48-1.64-.78-.04-.02-.04-.08-.01-.11.11-.08.22-.17.33-.25.02-.02.05-.02.07-.01 3.44 1.57 7.15 1.57 10.55 0 .02-.01.05-.01.07.01.11.09.22.17.33.26.04.03.04.09-.01.11-.52.31-1.07.56-1.64.78-.04.01-.05.06-.04.09.32.61.68 1.19 1.07 1.74.03.01.06.02.09.01 1.72-.53 3.45-1.33 5.25-2.65.02-.01.03-.03.03-.05.44-4.53-.73-8.46-3.1-11.95-.01-.01-.02-.02-.04-.02zM8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12 0 1.17-.84 2.12-1.89 2.12zm6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12 0 1.17-.83 2.12-1.89 2.12z"/></svg>
-                </a>
-              </li>
-        </ul>
-      </div>
-      <div class="astro-A52JHQYS">
-            <p class="astro-A52JHQYS"><strong class="astro-A52JHQYS">Landing Pages</strong></p>
-            <ul class="footer-link__list astro-A52JHQYS">
-              <li class="astro-A52JHQYS">
-                  <a href="/landing-pages/landing-1" class="astro-A52JHQYS">Landing Page 1</a>
-                </li><li class="astro-A52JHQYS">
-                  <a href="/landing-pages/landing-2" class="astro-A52JHQYS">Landing Page 2</a>
-                </li>
-            </ul>
-          </div><div class="astro-A52JHQYS">
-            <p class="astro-A52JHQYS"><strong class="astro-A52JHQYS">Company</strong></p>
-            <ul class="footer-link__list astro-A52JHQYS">
-              <li class="astro-A52JHQYS">
-                  <a href="/company/about" class="astro-A52JHQYS">About</a>
-                </li><li class="astro-A52JHQYS">
-                  <a href="/blog" class="astro-A52JHQYS">Blog</a>
-                </li><li class="astro-A52JHQYS">
-                  <a href="/company/contact" class="astro-A52JHQYS">Contact</a>
-                </li>
-            </ul>
-          </div><div class="astro-A52JHQYS">
-            <p class="astro-A52JHQYS"><strong class="astro-A52JHQYS">Theme</strong></p>
-            <ul class="footer-link__list astro-A52JHQYS">
-              <li class="astro-A52JHQYS">
-                  <a href="/theme/get-started" class="astro-A52JHQYS">Get Started</a>
-                </li><li class="astro-A52JHQYS">
-                  <a href="/theme/style-guide" class="astro-A52JHQYS">Style Guide</a>
-                </li><li class="astro-A52JHQYS">
-                  <a href="/theme/theme-setup" class="astro-A52JHQYS">Theme Setup</a>
-                </li><li class="astro-A52JHQYS">
-                  <a href="/theme/customizing-odyssey" class="astro-A52JHQYS">Customizing Odyssey</a>
-                </li>
-            </ul>
-          </div>
-    </div><div class="footer-copyright__container astro-A52JHQYS">
-      <a class="btn astro-JGBOAD6D" href="https://littlesticks.dev/templates/odyssey-theme/" target="_blank" rel="noopener">Get This Template <span class="icon astro-JGBOAD6D"><svg viewBox="0 0 24 24" width="18px" height="18px" class="astro-JGBOAD6D" astro-icon="ic:round-north-east"><path fill="currentColor" d="M9 6c0 .56.45 1 1 1h5.59L4.7 17.89a.996.996 0 1 0 1.41 1.41L17 8.41V14c0 .55.45 1 1 1s1-.45 1-1V6c0-.55-.45-1-1-1h-8c-.55 0-1 .45-1 1z"/></svg></span></a>
-      <p class="astro-A52JHQYS">Copyright &copy; 2023 Odyssey</p>
-    </div>
-</div>
-</footer>
-	</body></html>
-
+		<!--/lit-part--></template></theme-switcher><!--astro:end--></astro-island> </main> <footer style="--footer-bg:var(--theme-surface-1); --footer-color:var(--theme-on-surface-1)" data-astro-cid-dxtxdynh> <div class="content__container " data-astro-cid-63dlo7zr>  <div class="footer-grid__container" data-astro-cid-dxtxdynh> <div class="footer-brand__container" data-astro-cid-dxtxdynh> <div data-astro-cid-dxtxdynh> <p class="odyssey-logo" data-astro-cid-tvrurpns>Odyssey</p>  </div> <ul class="footer-socials__list" data-astro-cid-dxtxdynh> <li class="footer-socials__item" data-astro-cid-dxtxdynh> <a href="https://twitter.com/littlesticksdev" target="_blank" rel="noopener noreferrer" class="footer-socials__link" title="Open Twitter profile" data-astro-cid-dxtxdynh> <svg viewBox="0 0 24 24" width="24px" height="24px" data-astro-cid-dxtxdynh astro-icon="mdi:twitter"><path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg> </a> </li><li class="footer-socials__item" data-astro-cid-dxtxdynh> <a href="https://youtube.com/c/LittleSticks" target="_blank" rel="noopener noreferrer" class="footer-socials__link" title="Open Youtube profile" data-astro-cid-dxtxdynh> <svg viewBox="0 0 24 24" width="24px" height="24px" data-astro-cid-dxtxdynh astro-icon="mdi:youtube"><path fill="currentColor" d="m10 15 5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"/></svg> </a> </li><li class="footer-socials__item" data-astro-cid-dxtxdynh> <a href="https://github.com/littlesticks" target="_blank" rel="noopener noreferrer" class="footer-socials__link" title="Open Github profile" data-astro-cid-dxtxdynh> <svg viewBox="0 0 24 24" width="24px" height="24px" data-astro-cid-dxtxdynh astro-icon="mdi:github"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg> </a> </li><li class="footer-socials__item" data-astro-cid-dxtxdynh> <a href="https://littlesticks.dev/discord" target="_blank" rel="noopener noreferrer" class="footer-socials__link" title="Open Discord profile" data-astro-cid-dxtxdynh> <svg viewBox="0 0 24 24" width="24px" height="24px" data-astro-cid-dxtxdynh astro-icon="ic:baseline-discord"><path fill="currentColor" d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.09.09 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.09 16.09 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09-.01-.02-.04-.03-.07-.03-1.5.26-2.93.71-4.27 1.33-.01 0-.02.01-.03.02-2.72 4.07-3.47 8.03-3.1 11.95 0 .02.01.04.03.05 1.8 1.32 3.53 2.12 5.24 2.65.03.01.06 0 .07-.02.4-.55.76-1.13 1.07-1.74.02-.04 0-.08-.04-.09-.57-.22-1.11-.48-1.64-.78-.04-.02-.04-.08-.01-.11.11-.08.22-.17.33-.25.02-.02.05-.02.07-.01 3.44 1.57 7.15 1.57 10.55 0 .02-.01.05-.01.07.01.11.09.22.17.33.26.04.03.04.09-.01.11-.52.31-1.07.56-1.64.78-.04.01-.05.06-.04.09.32.61.68 1.19 1.07 1.74.03.01.06.02.09.01 1.72-.53 3.45-1.33 5.25-2.65.02-.01.03-.03.03-.05.44-4.53-.73-8.46-3.1-11.95-.01-.01-.02-.02-.04-.02zM8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12 0 1.17-.84 2.12-1.89 2.12zm6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12 0 1.17-.83 2.12-1.89 2.12z"/></svg> </a> </li> </ul> </div> <div data-astro-cid-dxtxdynh> <p data-astro-cid-dxtxdynh><strong data-astro-cid-dxtxdynh>Landing Pages</strong></p> <ul class="footer-link__list" data-astro-cid-dxtxdynh> <li data-astro-cid-dxtxdynh> <a href="/landing-pages/landing-1" data-astro-cid-dxtxdynh>Landing Page 1</a> </li><li data-astro-cid-dxtxdynh> <a href="/landing-pages/landing-2" data-astro-cid-dxtxdynh>Landing Page 2</a> </li> </ul> </div><div data-astro-cid-dxtxdynh> <p data-astro-cid-dxtxdynh><strong data-astro-cid-dxtxdynh>Company</strong></p> <ul class="footer-link__list" data-astro-cid-dxtxdynh> <li data-astro-cid-dxtxdynh> <a href="/company/about" data-astro-cid-dxtxdynh>About</a> </li><li data-astro-cid-dxtxdynh> <a href="/blog" data-astro-cid-dxtxdynh>Blog</a> </li><li data-astro-cid-dxtxdynh> <a href="/company/contact" data-astro-cid-dxtxdynh>Contact</a> </li> </ul> </div><div data-astro-cid-dxtxdynh> <p data-astro-cid-dxtxdynh><strong data-astro-cid-dxtxdynh>Theme</strong></p> <ul class="footer-link__list" data-astro-cid-dxtxdynh> <li data-astro-cid-dxtxdynh> <a href="/theme/get-started" data-astro-cid-dxtxdynh>Get Started</a> </li><li data-astro-cid-dxtxdynh> <a href="/theme/style-guide" data-astro-cid-dxtxdynh>Style Guide</a> </li><li data-astro-cid-dxtxdynh> <a href="/theme/theme-setup" data-astro-cid-dxtxdynh>Theme Setup</a> </li><li data-astro-cid-dxtxdynh> <a href="/theme/customizing-odyssey" data-astro-cid-dxtxdynh>Customizing Odyssey</a> </li> </ul> </div> </div> <div class="footer-copyright__container" data-astro-cid-dxtxdynh> <a class="btn" href="https://littlesticks.dev/templates/odyssey-theme/" target="_blank" rel="noopener" data-astro-cid-x5whpfzv>Get This Template <span class="icon" data-astro-cid-x5whpfzv><svg viewBox="0 0 24 24" width="18px" height="18px" data-astro-cid-x5whpfzv astro-icon="ic:round-north-east"><path fill="currentColor" d="M9 6c0 .56.45 1 1 1h5.59L4.7 17.89a.996.996 0 1 0 1.41 1.41L17 8.41V14c0 .55.45 1 1 1s1-.45 1-1V6c0-.55-.45-1-1-1h-8c-.55 0-1 .45-1 1z"/></svg></span></a>  <p data-astro-cid-dxtxdynh>Copyright &copy; 2023 Odyssey</p> </div>  </div>  </footer>  </body></html>  
