@@ -3,8 +3,8 @@ import { parse, isBefore } from 'date-fns';
 import {
 	Container,
 	TextCardSection,
-	BlogPostsList,
 } from '@littlesticks/odyssey-theme-components';
+import {BlogPostsList} from "../../components/BlogPostList.astro"
 import Layout from '../../layouts/Page.astro';
 import NewsletterForm from '../../components/forms/NewsletterForm.astro';
 
@@ -53,4 +53,9 @@ const seo = {
 	.blog-posts-list__section {
 		margin: var(--section-margin) auto;
 	}
+	.blog-post__preview img{
+		object-fit: cover;
+    	aspect-ratio: 3/2;
+	}
+	
 </style>
