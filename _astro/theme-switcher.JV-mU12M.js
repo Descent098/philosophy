@@ -58,7 +58,7 @@ import{j as P,w as L,x as a}from"./lit-html.1dKXSDW6.js";/**
 		d="M12 2C13.3132 2 14.6136 2.25866 15.8268 2.7612C17.0401 3.26375 18.1425 4.00035 19.0711 4.92893C19.9997 5.85752 20.7362 6.95991 21.2388 8.17317C21.7413 9.38642 22 10.6868 22 12L12 12L12 2Z"
 		fill="white"
 	/>
-</svg>`,H=a`<svg
+</svg>`,W=a`<svg
 	width="24"
 	height="24"
 	viewBox="0 0 24 24"
@@ -78,7 +78,7 @@ import{j as P,w as L,x as a}from"./lit-html.1dKXSDW6.js";/**
 		d="M12 2C13.3132 2 14.6136 2.25866 15.8268 2.7612C17.0401 3.26375 18.1425 4.00035 19.0711 4.92893C19.9997 5.85752 20.7362 6.95991 21.2388 8.17317C21.7413 9.38642 22 10.6868 22 12L12 12L12 2Z"
 		fill="#2C3E2D"
 	/>
-</svg>`,J=a`<svg
+</svg>`,H=a`<svg
 	width="24"
 	height="24"
 	viewBox="0 0 24 24"
@@ -98,7 +98,7 @@ import{j as P,w as L,x as a}from"./lit-html.1dKXSDW6.js";/**
 		d="M12 2C13.3132 2 14.6136 2.25866 15.8268 2.7612C17.0401 3.26375 18.1425 4.00035 19.0711 4.92893C19.9997 5.85752 20.7362 6.95991 21.2388 8.17317C21.7413 9.38642 22 10.6868 22 12L12 12L12 2Z"
 		fill="#1556AC"
 	/>
-</svg>`,K=a`<svg
+</svg>`,J=a`<svg
 	width="24"
 	height="24"
 	viewBox="0 0 24 24"
@@ -118,7 +118,7 @@ import{j as P,w as L,x as a}from"./lit-html.1dKXSDW6.js";/**
 		d="M12 2C13.3132 2 14.6136 2.25866 15.8268 2.7612C17.0401 3.26375 18.1425 4.00035 19.0711 4.92893C19.9997 5.85752 20.7362 6.95991 21.2388 8.17317C21.7413 9.38642 22 10.6868 22 12L12 12L12 2Z"
 		fill="#FBA92C"
 	/>
-</svg>`,W=a`<svg
+</svg>`,K=a`<svg
 width="24"
 height="24"
 viewBox="0 0 24 24"
@@ -138,7 +138,7 @@ xmlns="http://www.w3.org/2000/svg"
 	d="M12 2C13.3132 2 14.6136 2.25866 15.8268 2.7612C17.0401 3.26375 18.1425 4.00035 19.0711 4.92893C19.9997 5.85752 20.7362 6.95991 21.2388 8.17317C21.7413 9.38642 22 10.6868 22 12L12 12L12 2Z"
 	fill="white"
 />
-</svg>`;var G=Object.defineProperty,Q=Object.getOwnPropertyDescriptor,S=(i,t,e,s)=>{for(var r=s>1?void 0:s?Q(t,e):t,o=i.length-1,n;o>=0;o--)(n=i[o])&&(r=(s?n(t,e,r):n(r))||r);return s&&r&&G(t,e,r),r};const X=[{name:"default",icon:N,label:"Classic"},{name:"dark",icon:V,label:"Dark"},{name:"earth",icon:H,label:"Earth"},{name:"ocean",icon:J,label:"Ocean"},{name:"sand",icon:K,label:"Sand"},{name:"darkForest",icon:W,label:"Dark Forest"}];let f=class extends d{constructor(){super(...arguments),this._doc=null,this.theme=null}_getCurrentTheme(){this._doc=document.documentElement;const i=localStorage.getItem("theme");i!==null?this._setTheme(i):window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches?this._setTheme("dark"):this._setTheme("default")}firstUpdated(){this._getCurrentTheme()}_setTheme(i){this._doc.setAttribute("data-theme",i);const t=document.querySelector("#home-hero-image");i==="default"&&(t.src="/philosophy/assets/images/home/classic-hero.jpg"),i==="dark"&&(t.src="/philosophy/assets/images/home/dark-hero.jpg"),i==="earth"&&(t.src="/philosophy/assets/images/home/earth-hero.jpg"),i==="ocean"&&(t.src="/philosophy/assets/images/home/ocean-hero.jpg"),i==="sand"&&(t.src="/philosophy/assets/images/home/sand-hero.jpg"),i==="darkForest"&&(t.src="/philosophy/assets/images/home/darkForest-hero.jpg"),localStorage.setItem("theme",i),this.theme=i}render(){const i=a`${X.map(t=>a`
+</svg>`;var G=Object.defineProperty,Q=Object.getOwnPropertyDescriptor,S=(i,t,e,s)=>{for(var r=s>1?void 0:s?Q(t,e):t,o=i.length-1,n;o>=0;o--)(n=i[o])&&(r=(s?n(t,e,r):n(r))||r);return s&&r&&G(t,e,r),r};const X=[{name:"default",icon:N,label:"Classic"},{name:"dark",icon:V,label:"Dark"},{name:"earth",icon:W,label:"Earth"},{name:"ocean",icon:H,label:"Ocean"},{name:"sand",icon:J,label:"Sand"},{name:"darkForest",icon:K,label:"Dark Forest"}];let f=class extends d{constructor(){super(...arguments),this._doc=null,this.theme=null}_getCurrentTheme(){this._doc=document.documentElement;const i=localStorage.getItem("theme");i!==null?this._setTheme(i):window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches?this._setTheme("dark"):this._setTheme("default")}firstUpdated(){this._getCurrentTheme()}_setTheme(i){this._doc.setAttribute("data-theme",i);const t=document.querySelector("#home-hero-image");t.src.endsWith("/philosophy/profile.jpg")||(i==="default"&&(t.src="/philosophy/assets/images/home/classic-hero.jpg"),i==="dark"&&(t.src="/philosophy/assets/images/home/dark-hero.jpg"),i==="earth"&&(t.src="/philosophy/assets/images/home/earth-hero.jpg"),i==="ocean"&&(t.src="/philosophy/assets/images/home/ocean-hero.jpg"),i==="sand"&&(t.src="/philosophy/assets/images/home/sand-hero.jpg"),i==="darkForest"&&(t.src="/philosophy/assets/images/home/darkForest-hero.jpg")),localStorage.setItem("theme",i),this.theme=i}render(){const i=a`${X.map(t=>a`
       <div class="theme-select__container">
         <button
           @click=${()=>this._setTheme(t.name)}
