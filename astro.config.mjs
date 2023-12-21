@@ -13,4 +13,5 @@ export default defineConfig({
       external: ["svgo"],
     },
   },
+  prefetch: true
 });

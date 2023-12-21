@@ -1,11 +1,16 @@
 ---
-import { Container } from '@littlesticks/odyssey-theme-components';
+// @ts-nocheck
+import { Container, Button } from '@littlesticks/odyssey-theme-components';
 import Layout from './Page.astro'; 
 import { generateTagData } from '../utils/helpers';
-import { ThemeSwitcher } from '../components/theme-switcher/theme-switcher';
-import settings from '../config/settings.js';
+import { Image } from 'astro:assets';
+
+const allImages = import.meta.glob('./../images/blog/*/*.{png,jpeg,jpg,gif}');
+
+
 
 const {content: {title, description, publishDate, canonicalURL, featuredImage, tags} } = Astro.props;
+
 
 let allTagsData = [];
 
@@ -32,20 +37,23 @@ const seo = {
         </li>
       ))}
     </ul>
-    <h1>{title}</h1>
+    <h1 transition:animate="initial" transition:name={title}>{title}</h1>
     <p class="post-layout__date">
       <time><em>{publishDate}</em></time>
     </p>
-    {featuredImage && <img class="post-layout__img" src={featuredImage} alt={title} />}
+    {featuredImage &&<Image width={1280} height={720} class="post-layout__img" src={allImages[".."+featuredImage]()} alt={title} transition:animate="initial" transition:name={featuredImage}/>}
+
+
   </div>
   <Container narrow>  
     <article id="article">
         <slot></slot>
     </article>
+    <Button href="/philosophy/blog">Back to blog</Button>
   </Container>
 </Layout>
 
-<style>
+<style> 
   #article {
     padding-bottom: 3rem;
   }

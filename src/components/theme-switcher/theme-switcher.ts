@@ -88,12 +88,13 @@ export class ThemeSwitcher extends LitElement {
 	];
 
 	// set the _doc element
-	private _doc = document.firstElementChild;
+	private _doc = null;
 
 	@property({ type: String })
 	theme: string | null = null;
 
 	private _getCurrentTheme() {
+		this._doc = document.documentElement
 		// check for a local storage theme first
 		const localStorageTheme = localStorage.getItem('theme');
 		if (localStorageTheme !== null) {

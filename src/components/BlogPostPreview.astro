@@ -1,11 +1,19 @@
 ---
+// @ts-nocheck
 const {post} = Astro.props;
+import { Image } from 'astro:assets';
+
+const allImages = import.meta.glob('./../images/blog/*/*.{png,jpeg,jpg,gif}');
+
 ---
 
 <li class="blog-post__preview">
   <a href={post.href}>
-    <img src={post.featuredImage} />
-    <h3>{post.title}</h3>
+    
+    {post.featuredImage &&<Image width={702} height={468} class="post-layout__img" src={allImages[".."+post.featuredImage]()} alt={post.title} transition:animate="initial" transition:name={post.featuredImage}/>}
+
+    <!-- <img src={post.featuredImage} transition:animate="initial" transition:name={post.featuredImage}/> -->
+    <h3 transition:animate="initial" transition:name={post.title}>{post.title}</h3>
     {post.excerpt && <p>{post.excerpt}</p>}
   </a>
 </li>
