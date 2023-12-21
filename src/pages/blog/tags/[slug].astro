@@ -2,6 +2,7 @@
 import Layout from '../../../layouts/Page.astro'
 import { Container } from '@littlesticks/odyssey-theme-components';
 import {generateTagData} from '../../../utils/helpers.js'
+import { BlogPostsList } from '../../../components/BlogPostList.astro';
 
 
 export async function getStaticPaths() {
@@ -33,26 +34,23 @@ export async function getStaticPaths() {
 const {tag, posts} = Astro.props;
 
 const seo ={
-  title: `${tag} | Astro Odyssey`,
+  title: `${tag} | Kieran Wood | Philosophy`,
 }
----
 
+let filteredPosts = []
+
+posts.map(post => (
+  filteredPosts.push(post.frontmatter)
+  ))
+
+---
 <Layout seo={seo}>
-  <Container narrow>
-    <section class="tag-page__section"> 
+  <Container>
+
+    <section class="blog-posts-list__section">
       <h1>Posts Tagged with "{tag}"</h1>
-      <ul>
-        {posts.map(post => (
-          <li><a href={post.url}>{post.frontmatter.title}</a></li>
-        ))}
-      </ul>
-    </section>
+
+			<BlogPostsList posts={filteredPosts} />
+		</section>
   </Container>
 </Layout>
-
-<style>
-.tag-page__section {
-  min-height: 60vh;
-  margin: var(--section-margin);
-}
-</style>

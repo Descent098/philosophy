@@ -1,11 +1,13 @@
 ---
-import { Header, Button, Footer } from '@littlesticks/odyssey-theme-components';
+import { Button } from '@littlesticks/odyssey-theme-components';
 import Layout from './Base.astro';
 import type { Props as BaseHeadProps } from '../components/head/BaseHead.astro';
 import Logo from '../components/Logo.astro';
 import settings from '../config/settings';
 import { footerLists, footerSocials } from '../config/footer';
-import { ThemeSwitcher } from '../components/theme-switcher/theme-switcher';
+import {Header} from "../components/head/Header.astro"
+
+import {Footer} from "../components/Footer.astro"
 
 
 export interface Props {
@@ -22,7 +24,7 @@ const { seo } = Astro.props as Props;
 		<span slot="logo">
 			<Logo />
 		</span>
-		<Button slot="action-item" href="/philosophy/theme/get-started">Get Started</Button>
+		<Button slot="action-item" href="/philosophy/blog">Blog</Button>
 	</Header>
 	<div id="page">
 		<slot />
@@ -38,12 +40,4 @@ const { seo } = Astro.props as Props;
 	>
 		<Logo slot="logo" />
 	</Footer>
-	<h3 class="theme-change">Change theme</h3>
-	{settings.enableThemeSwitcher && <ThemeSwitcher client:load/>}
 </Layout>
-
-<style>
-	.theme-change{
-		text-align: center;
-	}
-</style>

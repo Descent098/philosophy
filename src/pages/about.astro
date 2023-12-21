@@ -1,10 +1,12 @@
 ---
 import { TextSection } from '@littlesticks/odyssey-theme-components';
-import Layout from '../../layouts/Page.astro';
-import HeroSection from '../../components/sections/heros/HeroSection.astro';
+import Layout from './../layouts/Page.astro';
+import HeroSection from '../components/sections/heros/HeroSection.astro';
+import settings from '../config/settings.js';
+import {ThemeSwitcher} from '../components/theme-switcher/theme-switcher';
 
 const seo = {
-	title: 'About | Astro Odyssey Theme',
+	title: 'About | Kieran Wood | Philosophy',
 	description: 'About Page',
 };
 ---
@@ -12,7 +14,7 @@ const seo = {
 <Layout {seo}>
 	<HeroSection>
 		<div slot="text-container">
-			<h1>About Odyssey</h1>
+			<h1>About Me!</h1>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, nisi
 				recusandae? Quidem dignissimos nobis, dicta unde, aperiam voluptate
@@ -22,7 +24,7 @@ const seo = {
 		</div>
     <picture slot="image-container">
       <img
-        src="/philosophy/assets/images/home/classic-hero.jpg"
+        src="/philosophy/profile.jpg"
         alt="Astro Odyssee"
         id="home-hero-image"
       />
@@ -44,4 +46,5 @@ const seo = {
       Ipsam error eaque velit possimus porro eum quod illo iusto officia magnam magni, beatae nisi voluptate praesentium? Saepe distinctio adipisci quas hic quae facilis? Sequi eum hic aperiam impedit minus?
     </p>
   </TextSection>
+  {settings.enableThemeSwitcher && <ThemeSwitcher client:load/>}
 </Layout>

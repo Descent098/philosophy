@@ -1,23 +1,18 @@
 export const footerSocials = [
   {
-    name: 'Twitter',
-    url: 'https://twitter.com/littlesticksdev',
-    icon: "mdi:twitter",
-  },
-  {
-    name: 'Youtube',
-    url: 'https://youtube.com/c/LittleSticks',
-    icon: "mdi:youtube",
+    name: 'instagram',
+    url: 'https://instagram.com/descent098',
+    icon: "mdi:instagram",
   },
   {
     name: 'Github',
-    url: 'https://github.com/littlesticks',
+    url: 'https://github.com/descent098',
     icon: "mdi:github",
   },
   {
-    name: 'Discord',
-    url: 'https://littlesticks.dev/discord',
-    icon: "ic:baseline-discord",
+    name: 'LinkedIn',
+    url: 'https://linkedin/in/kieran-wood',
+    icon: "mdi:linkedin",
   },
 ]
 

@@ -8,23 +8,18 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 <Container>
 	<section class="hero-section__section">
 		<div class="hero-section__text">
-				<h1>Welcome to Odyssey</h1>
+				<h1>Hi 👋 I'm Kieran</h1>
 				<p>
-					A marketing website theme built with <a
-						href="https://astro.build"
-						target="_blank"
-						rel="noreferrer">Astro</a
-					> and carefully crafted for startups and businesses.
+					Welcome to my philosophy blog. I talk about a ton of topics!
 				</p>
 				<div class="hero-btns__container">
-					<Button href="/philosophy/theme/get-started" customIcon
-						>Get Started
+					<Button href="/philosophy/blog" customIcon
+						>Check out my Writing
             <Fragment slot="icon">
               <Icon name="ic:baseline-chevron-right"/>
             </Fragment>
             </Button
 					>
-					<Button href="/philosophy/theme/style-guide" unelevated>Style Guide</Button>
 				</div>
         {settings.enableThemeSwitcher && <ThemeSwitcher client:load/>}
 		</div>

@@ -4,15 +4,11 @@ export const nav = [
 		slug: '/philosophy',
 	},
 	{
-		title: 'Blog',
-		slug: '/philosophy/blog',
-	},
-	{
 		title: 'About',
-		slug: '/philosophy/company/about',
+		slug: '/philosophy/about',
 	},
 	{
 		title: 'Contact',
-		slug: '/philosophy/company/contact',
+		slug: '/philosophy/contact',
 	},
 ];

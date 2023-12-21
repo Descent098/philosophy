@@ -4,7 +4,7 @@ const {post} = Astro.props;
 import { Image } from 'astro:assets';
 
 const allImages = import.meta.glob('./../images/blog/*/*.{png,jpeg,jpg,gif}');
-
+export { default as BlogPostPreview} from "./BlogPostPreview.astro"
 ---
 
 <li class="blog-post__preview">

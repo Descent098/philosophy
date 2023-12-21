@@ -118,24 +118,27 @@ export class ThemeSwitcher extends LitElement {
 		this._doc.setAttribute('data-theme', theme);
 
     const _heroImage = document.querySelector('#home-hero-image') as HTMLImageElement;
-		if (theme === 'default') {
-			_heroImage.src = '/philosophy/assets/images/home/classic-hero.jpg';
+		if (!(_heroImage.src.endsWith("/philosophy/profile.jpg"))){
+			if (theme === 'default') {
+				_heroImage.src = '/philosophy/assets/images/home/classic-hero.jpg';
+			}
+			if (theme === 'dark') {
+				_heroImage.src = '/philosophy/assets/images/home/dark-hero.jpg';
+			}
+			if (theme === 'earth') {
+				_heroImage.src = '/philosophy/assets/images/home/earth-hero.jpg';
+			}
+			if (theme === 'ocean') {
+				_heroImage.src = '/philosophy/assets/images/home/ocean-hero.jpg';
+			}
+			if (theme === 'sand') {
+				_heroImage.src = '/philosophy/assets/images/home/sand-hero.jpg';
+			}
+			if (theme === 'darkForest') {
+				_heroImage.src = '/philosophy/assets/images/home/darkForest-hero.jpg';
+			}
 		}
-		if (theme === 'dark') {
-			_heroImage.src = '/philosophy/assets/images/home/dark-hero.jpg';
-		}
-		if (theme === 'earth') {
-			_heroImage.src = '/philosophy/assets/images/home/earth-hero.jpg';
-		}
-		if (theme === 'ocean') {
-			_heroImage.src = '/philosophy/assets/images/home/ocean-hero.jpg';
-		}
-		if (theme === 'sand') {
-			_heroImage.src = '/philosophy/assets/images/home/sand-hero.jpg';
-		}
-		if (theme === 'darkForest') {
-			_heroImage.src = '/philosophy/assets/images/home/darkForest-hero.jpg';
-		}
+		
 		localStorage.setItem('theme', theme);
 		this.theme = theme;
 	}
