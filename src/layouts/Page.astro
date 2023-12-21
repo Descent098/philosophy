@@ -39,7 +39,7 @@ const { seo } = Astro.props as Props;
 		<Logo slot="logo" />
 	</Footer>
 	<h3 class="theme-change">Change theme</h3>
-	{settings.enableThemeSwitcher && <ThemeSwitcher client:visible />}
+	{settings.enableThemeSwitcher && <ThemeSwitcher client:load/>}
 </Layout>
 
 <style>
