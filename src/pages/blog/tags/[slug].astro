@@ -3,7 +3,8 @@ import Layout from '../../../layouts/Page.astro'
 import { Container } from '@littlesticks/odyssey-theme-components';
 import {generateTagData} from '../../../utils/helpers.js'
 import { BlogPostsList } from '../../../components/BlogPostList.astro';
-
+import { ThemeSwitcher } from '../../../components/theme-switcher/theme-switcher';
+import settings from '../../../config/settings';
 
 export async function getStaticPaths() {
   const allPosts = await Astro.glob('../posts/*.mdx');
@@ -39,10 +40,14 @@ const seo ={
 
 let filteredPosts = []
 
-posts.map(post => (
-  filteredPosts.push(post.frontmatter)
-  ))
+const getPath = function (path){
+  let pathParts = path.split('/')
+  return pathParts[pathParts.length - 2]
+}
 
+posts.map(post => (
+  filteredPosts.push({...post.frontmatter, "href":`/blog/${getPath(post.frontmatter.featuredImage)}`})
+  ))
 ---
 <Layout seo={seo}>
   <Container>
@@ -53,4 +58,5 @@ posts.map(post => (
 			<BlogPostsList posts={filteredPosts} />
 		</section>
   </Container>
+  {settings.enableThemeSwitcher && <ThemeSwitcher client:load/>}
 </Layout>
