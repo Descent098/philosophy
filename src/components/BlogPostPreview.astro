@@ -5,15 +5,24 @@ import { Image } from 'astro:assets';
 
 const allImages = import.meta.glob('./../images/blog/*/*.{png,jpeg,jpg,gif}');
 export { default as BlogPostPreview} from "./BlogPostPreview.astro"
+
+const dateOptions: object = {
+	year: "numeric",
+	month: "long",
+	day: "numeric",
+};
+const formattedPublishDate = new Date(post.publishDate).toLocaleDateString(
+	"en-US",
+	dateOptions
+);
 ---
 
 <li class="blog-post__preview">
   <a href={post.href}>
     
     {post.featuredImage &&<Image width={702} height={468} class="post-layout__img" src={allImages[".."+post.featuredImage]()} alt={post.title} transition:animate="initial" transition:name={post.featuredImage}/>}
-
-    <!-- <img src={post.featuredImage} transition:animate="initial" transition:name={post.featuredImage}/> -->
     <h3 transition:animate="initial" transition:name={post.title}>{post.title}</h3>
+    <small>{formattedPublishDate}</small>
     {post.excerpt && <p>{post.excerpt}</p>}
   </a>
 </li>
