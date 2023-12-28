@@ -2,8 +2,10 @@
 import { TextSection } from '@littlesticks/odyssey-theme-components';
 import Layout from './../layouts/Page.astro';
 import HeroSection from '../components/sections/heros/HeroSection.astro';
-import settings from '../config/settings.js';
-import {ThemeSwitcher} from '../components/theme-switcher/theme-switcher';
+
+import { footerSocials } from '../config/footer';
+
+import { Icon } from 'astro-icon';
 
 const seo = {
 	title: 'About | Kieran Wood | Philosophy',
@@ -16,11 +18,34 @@ const seo = {
 		<div slot="text-container">
 			<h1>About Me!</h1>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, nisi
-				recusandae? Quidem dignissimos nobis, dicta unde, aperiam voluptate
-				autem iste reprehenderit, aliquam ducimus illo ea ipsum qui animi sequi.
-				Numquam.
+				I'm a computer science major, with a minor in philosophy. I am particularly fond of existentialism, political philosophy, and rambling.
+        <br/>
+        <ul>
+          <li>🍁 & 💂: Canadian & British</li>
+          <li>🏫: University of Calgary</li>
+          <li>🎿: Skiier</li>
+          <li>🤿: Scuba Diver</li>
+          <li>📷: Photographer</li>
+          <li>🖼️: 3D Artist</li>
+          <li>🖥️: Coder</li>
+        </ul>
 			</p>
+      <h3>Reach out on social media</h3>
+    <div class="about-socials__list">
+      {
+        footerSocials.map((social) => (
+            <a
+              href={social.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="about__link"
+              title={`Open ${social.name} profile`}
+            >
+              <Icon name={social.icon} width="24px" height="24px" />
+            </a>
+        ))
+      }
+    </div>
 		</div>
     <picture slot="image-container">
       <img
@@ -30,21 +55,22 @@ const seo = {
       />
     </picture>
 	</HeroSection>
-  <TextSection narrow>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo asperiores alias illo accusamus voluptatem ea cum nemo odit! Consequatur quidem quo iusto quam ea neque nisi dolorum quod, recusandae id!
-      Repudiandae, fugit labore voluptatum beatae modi omnis adipisci corrupti aut aliquid cumque inventore iure possimus doloremque iste incidunt nulla architecto. Nobis iusto sunt voluptatem necessitatibus laborum, earum doloremque fugit rerum!
-    </p>
-    <p>Fugit asperiores harum consectetur sapiente deleniti. Optio enim tenetur impedit reprehenderit labore, illo eius in, consequatur odio dolore iste assumenda explicabo, nisi similique qui obcaecati possimus delectus reiciendis quod modi.</p>
-    
-    <p>
-      Vel tempore rem omnis esse officiis optio, explicabo, quod deleniti adipisci ullam cum necessitatibus eius minus vero saepe ad, dicta rerum praesentium deserunt illo itaque odio corrupti voluptatum quibusdam. Pariatur.
-      Porro neque tempore, illum eligendi deleniti iure dolorem amet magnam at dolores veniam nemo cumque aut alias repellat est dicta sit repellendus facilis officia? Minima dolorum quo ducimus adipisci perferendis.
-    </p>
-    <p>
-      Quis distinctio tempora sequi sit repudiandae cumque nostrum deserunt, voluptatibus rem eum fuga modi beatae cum ullam delectus dicta atque eius nam quos corporis. Animi praesentium quae nobis. Odit, mollitia. Voluptatum, hic explicabo. Ex accusamus ipsa ea dolor commodi quas esse ipsum alias et adipisci error necessitatibus atque facere rerum ratione consequatur aspernatur repudiandae minima consectetur fuga, doloremque dolorum pariatur.
-      Ipsam error eaque velit possimus porro eum quod illo iusto officia magnam magni, beatae nisi voluptate praesentium? Saepe distinctio adipisci quas hic quae facilis? Sequi eum hic aperiam impedit minus?
-    </p>
-  </TextSection>
-  {settings.enableThemeSwitcher && <ThemeSwitcher client:load/>}
 </Layout>
+
+
+<style>
+  .about-socials__list {
+    margin: 1rem 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+  }
+  .about__link{
+    padding:0 1rem;
+  }
+  .about__link > *{
+    width: 100%;
+    height: 36px;
+
+  }
+</style>

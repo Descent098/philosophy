@@ -18,58 +18,42 @@ export const footerSocials = [
 
 export const footerLists = [
 	{
-		title: 'Landing Pages',
+		title: 'Other sites',
 		items: [
 			{
-				title: 'Landing Page 1',
-				slug: '/landing-pages/landing-1',
+				title: 'Tech Blog',
+				slug: 'https://kieranwood.ca/tech',
 			},
 			{
-				title: 'Landing Page 2',
-				slug: '/landing-pages/landing-2',
+				title: 'Main website',
+				slug: 'https://kieranwood.ca',
 			},
-      // {
-			// 	title: 'Landing Page 3',
-			// 	slug: '/landing-pages/landing-3',
-			// },
+      		{
+				title: 'Canadian Coding',
+				slug: 'https://canadiancoding.ca',
+			},
+			{
+				title: 'Schulich Ignite',
+				slug: 'https://schulichignite.com',
+			},
 		],
 	},
 	{
-		title: 'Company',
+		title: 'More pages',
 		items: [
 			{
 				title: 'About',
-				slug: '/company/about',
+				slug: '/philosophy/about',
 			},
 			{
 				title: 'Blog',
-				slug: '/blog',
+				slug: '/philosophy/blog',
 			},
 			{
 				title: 'Contact',
-				slug: '/company/contact',
+				slug: '/philosophy/contact',
 			},
 		],
 	},
-	{
-		title: 'Theme',
-		items: [
-			{
-				title: 'Get Started',
-				slug: '/theme/get-started',
-			},
-			{
-				title: 'Style Guide',
-				slug: '/theme/style-guide',
-			},
-      {
-        title: 'Theme Setup',
-        slug: '/theme/theme-setup',
-      },
-      {
-        title: 'Customizing Odyssey',
-        slug: '/theme/customizing-odyssey',
-      }
-		],
-	},
+
 ];

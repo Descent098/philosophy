@@ -2,8 +2,6 @@
 import ContactForm from './../components/forms/ContactForm.astro';
 import Layout from '../layouts/Page.astro';
 import { Container } from '@littlesticks/odyssey-theme-components';
-import settings from '../config/settings.js';
-import {ThemeSwitcher} from '../components/theme-switcher/theme-switcher';
 
 const seo = {
 	title: 'Contact | Kieran Wood | Philosophy',
@@ -36,7 +34,6 @@ const seo = {
 			</div>
 		</section>
 	</Container>
-	{settings.enableThemeSwitcher && <ThemeSwitcher client:load/>}
 </Layout>
 
 <style>
