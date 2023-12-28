@@ -14,6 +14,11 @@ export const footerSocials = [
     url: 'https://linkedin/in/kieran-wood',
     icon: "mdi:linkedin",
   },
+  {
+    name: 'email',
+    url: 'mailto:kieran@canadiancoding.ca',
+    icon: "mdi:envelope",
+  },
 ]
 
 export const footerLists = [
@@ -50,8 +55,8 @@ export const footerLists = [
 				slug: '/philosophy/blog',
 			},
 			{
-				title: 'Contact',
-				slug: '/philosophy/contact',
+				title: 'Terms of Service',
+				slug: '/philosophy/terms-of-service',
 			},
 		],
 	},

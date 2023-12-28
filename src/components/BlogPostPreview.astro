@@ -30,11 +30,12 @@ const formattedPublishDate = new Date(post.publishDate).toLocaleDateString(
 
 <style>
 .blog-post__preview img {
+  height:auto;
   margin-bottom: 1rem;
   border-radius: calc(var(--theme-shape-radius) /2);
   transition: border-radius var(--theme-transition);
   object-fit: cover;
-  aspect-ratio: 3/2;
+  aspect-ratio: 7/4;
 }
 .blog-post__preview:hover img {
   border-radius: var(--theme-shape-radius);
