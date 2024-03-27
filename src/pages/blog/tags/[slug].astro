@@ -46,7 +46,7 @@ const getPath = function (path){
 }
 
 posts.map(post => (
-  filteredPosts.push({...post.frontmatter, "href":`/blog/${getPath(post.frontmatter.featuredImage)}`})
+  filteredPosts.push({...post.frontmatter, "href":`/philosophy/blog/posts/${getPath(post.frontmatter.featuredImage)}`})
   ))
 ---
 <Layout seo={seo}>
