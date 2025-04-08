@@ -2,14 +2,10 @@
 import { parse, isBefore } from 'date-fns';
 import {
 	Container,
-	TextCardSection,
 } from '@littlesticks/odyssey-theme-components';
 import {BlogPostsList} from "../../components/BlogPostList.astro"
 import Layout from '../../layouts/Page.astro';
-import NewsletterForm from '../../components/forms/NewsletterForm.astro';
-import { ThemeSwitcher } from '../../components/theme-switcher/theme-switcher';
-import settings from '../../config/settings';
-
+import {generateTagData} from '../../utils/helpers.js'
 
 
 const posts = await Astro.glob('./posts/*.mdx').then(posts =>
@@ -30,10 +26,43 @@ const posts = await Astro.glob('./posts/*.mdx').then(posts =>
 		})
 );
 
+const allPosts = await Astro.glob('./posts/*.mdx');
+const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
+const allCategoriesUnique = new Set();
+
+
+sortedPosts.forEach(post => {
+    post.frontmatter.tags && post.frontmatter.tags.map(tag => {
+      allCategoriesUnique.add(tag);
+    })
+  })
+  const alphabeticalTags = Array.from(allCategoriesUnique).sort()
+  let tagData = []
+  
+  const allCategoriesData = generateTagData(alphabeticalTags);
+   // map through the categories array
+allCategoriesData.map((tag) =>{
+
+    tagData.push({title:tag.title, slug: tag.slug, })
+  })
+
+
 const seo = {
 	title: 'Blog | Kieran Wood | Philosophy',
 	description: 'Astro Odyssey Theme Blog Page',
 };
+
+
+const columns = 6
+const rows = Math.ceil(alphabeticalTags.length/columns)+2
+
+const mediumColumns= 4
+const mediumRows= Math.ceil(alphabeticalTags.length/columns)+2
+
+const smallColumns= 3
+const smallRows= Math.ceil(alphabeticalTags.length/columns)+2
+const xsmallColumns= 2
+const xsmallRows= Math.ceil(alphabeticalTags.length/columns)+2
 ---
 
 <Layout {seo}>
@@ -42,11 +71,20 @@ const seo = {
 		<section class="blog-posts-list__section">
 			<h2>Recent Posts</h2>
 			<BlogPostsList posts={posts} />
+			<hr>
+			<h2>Tags</h2>
+			<div class="tagContainer">
+				{tagData.map((item) => (
+				  <div class="tag">
+					<a class="btn" href={`/blog/tags/${item.slug}/`}>{item.title}</a>
+				  </div>
+				))}
+			</div>
 		</section>
 	</Container>
 </Layout>
 
-<style>
+<style define:vars={{rows, columns, mediumColumns,mediumRows, smallColumns,smallRows, xsmallColumns,xsmallRows}}>
 	.blog-posts-list__section {
 		margin: var(--section-margin) auto;
 	}
@@ -57,6 +95,48 @@ const seo = {
 
 	.theme-change{
 		text-align: center;
+	}
+	.tagContainer{
+		display: grid;
+		grid-template-columns: repeat(var(--columns), 1fr);
+		grid-template-rows: repeat(var(--rows), 1fr);
+		grid-column-gap: 5px;
+		grid-row-gap: 1rem;
+		padding:1rem;
+	}
+	.btn{
+		width: fit-content;
+		padding: 0.36rem 0.92rem;
+		margin-bottom: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--theme-primary);
+		color: var(--theme-on-primary);
+		border: none;
+		border-radius: var(--theme-button-border-radius);
+		font-weight: 500;
+		text-decoration: none;
+	}
+	@media (max-width:1000px) {
+		.tagContainer{
+			grid-template-columns: repeat(var(--mediumColumns), 1fr);
+			grid-template-rows: repeat(var(--mediumRows), 1fr);
+		}
+	}
+
+	@media (max-width:700px) {
+		.tagContainer{
+			grid-template-columns: repeat(var(--smallColumns), 1fr);
+			grid-template-rows: repeat(var(--smallRows), 1fr);
+		}
+	}
+
+	@media (max-width:500px) {
+		.tagContainer{
+			grid-template-columns: repeat(var(--xsmallColumns), 1fr);
+			grid-template-rows: repeat(var(--xsmallRows), 1fr);
+		}
 	}
 </style>
 	

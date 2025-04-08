@@ -1,0 +1,62 @@
+---
+import Layout from '../../../layouts/Page.astro'
+import { Container } from '@littlesticks/odyssey-theme-components';
+const allPosts = await Astro.glob('../posts/*.mdx');
+const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
+const allCategoriesUnique = new Set();
+import {generateTagData} from '../../../utils/helpers.js'
+
+sortedPosts.forEach(post => {
+    post.frontmatter.tags && post.frontmatter.tags.map(tag => {
+      allCategoriesUnique.add(tag);
+    })
+  })
+  const alphabeticalTags = Array.from(allCategoriesUnique).sort()
+  let tagData = []
+  
+  const allCategoriesData = generateTagData(alphabeticalTags);
+   // map through the categories array
+allCategoriesData.map((tag) =>{
+
+    tagData.push({title:tag.title, slug: tag.slug, })
+  })
+
+  const seo ={
+  title: `tags | Kieran Wood | Philosophy`,
+}
+---
+<Layout seo={seo}>
+    <Container>
+        <h1>Tags</h1>
+        <div class="tagContainer">
+            {tagData.map((item) => (
+              <div class="tag">
+                <a class="btn" href={`/blog/tags/${item.slug}/`}>{item.title}</a>
+              </div>
+            ))}
+          </div>
+    </Container>
+    <style>
+        .tagContainer{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(10, 1fr);
+            grid-column-gap: 5px;
+            grid-row-gap: 1rem;
+        }
+        .btn{
+            width: fit-content;
+            padding: 0.36rem 0.92rem;
+            margin-bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--theme-primary);
+            color: var(--theme-on-primary);
+            border: none;
+            border-radius: var(--theme-button-border-radius);
+            font-weight: 500;
+            text-decoration: none;
+        }
+    </style>
+</Layout>
