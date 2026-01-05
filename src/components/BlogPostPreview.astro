@@ -15,12 +15,19 @@ const formattedPublishDate = new Date(post.publishDate).toLocaleDateString(
 	"en-US",
 	dateOptions
 );
+
+let img
+try{
+  img = allImages[".."+post.featuredImage]()
+}catch{
+  img=allImages["../images/blog/_meta/placeholder.png"]()
+}
 ---
 
 <li class="blog-post__preview">
   <a href={post.href}>
     
-    {post.featuredImage &&<Image width={702} height={468} class="post-layout__img" src={allImages[".."+post.featuredImage]()} alt={post.title} transition:animate="initial" transition:name={post.featuredImage}/>}
+    {post.featuredImage &&<Image width={702} height={468} class="post-layout__img" src={img} alt={post.title} transition:animate="initial" transition:name={post.featuredImage}/>}
     <h3 transition:animate="initial" transition:name={post.title}>{post.title}</h3>
     <small>{formattedPublishDate}</small>
     {post.excerpt && <p>{post.excerpt}</p>}

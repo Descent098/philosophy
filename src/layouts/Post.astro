@@ -25,6 +25,13 @@ const seo = {
 	canonicalURL,
 	image: featuredImage,
 };
+
+let img
+try{
+  img = allImages[".."+post.featuredImage]()
+}catch{
+  img=allImages["../images/blog/_meta/placeholder.png"]()
+}
 ---
 <Layout seo={seo}> 
   <div class="post-header__container"> 
@@ -50,7 +57,7 @@ const seo = {
                         widths={[240, 540, 720, 1280]}
                         sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, 1280px`}
                         class="post-layout__img" 
-                        src={allImages[".."+featuredImage]()} 
+                        src={img} 
                         alt={title} 
                         transition:animate="initial" 
                         transition:name={featuredImage}
