@@ -19,6 +19,11 @@ export const footerSocials = [
     url: 'mailto:kieran@canadiancoding.ca',
     icon: "mdi:envelope",
   },
+    {
+    name: 'rss',
+    url: '/philosophy/rss.xml',
+    icon: "mdi:rss",
+  },
 ]
 
 export const footerLists = [
