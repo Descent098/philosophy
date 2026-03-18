@@ -12,7 +12,7 @@ export async function GET(context) {
       pubDate: post.data.publishDate,
       description: post.data.description,
       // TODO: Clean up the path parsing below
-      link: `/philosophy/blog/${post.filePath.split("/").slice(-1)[0].slice(0,-4)}/`,
+      link: `/philosophy/blog/posts/${post.filePath.split("/").slice(-1)[0].slice(0,-4)}/`,
     })),
   });
 }
